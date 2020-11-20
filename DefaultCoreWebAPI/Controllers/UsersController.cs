@@ -27,6 +27,7 @@ namespace DefaultCoreWebAPI.Controllers
             return await _context.Users.ToListAsync();            
         }
 
+        //api/Users/1
         [HttpGet("{id}")]
 
         public async Task<ActionResult<AppUser>> GetUser(int id)
